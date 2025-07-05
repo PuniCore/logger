@@ -7,7 +7,7 @@ const pkg = JSON.parse(fs.readFileSync(new URL('package.json', import.meta.url),
 
 export const options: Options =({
   entry: ['src/index.ts', 'src/root.ts'],      // 入口文件
-  format: ['esm'],       // ESM格式
+  format: ['cjs', 'esm'],       // ESM格式
   nodeProtocol: true,             // 使用Node.js协议
   unbundle: false,                 // 打包依赖
   dts: true,                    // 生成类型声明文件
@@ -19,10 +19,11 @@ export const options: Options =({
   platform: 'node',            // 指定为Node.js环境
   outDir: 'dist',               // 指定输出目录 
   external: Object.keys(pkg.dependencies),                 // 外部依赖, 不打包进输出文件中
-  onSuccess: async () => {
-    await new Promise((resolve) => setTimeout(resolve, 5000))
-    copyFiles()
-  }
+  hooks(hooks) {
+    hooks.hook('build:done', () => {
+      copyFiles()
+    })
+  },
 })
 
 export default defineConfig(options)
@@ -37,6 +38,11 @@ const copyFiles = () => {
   fs.readdirSync(distDir).forEach((file) => {
     if (file.endsWith('.d.cts')) {
       fs.rmSync(path.join(distDir, file))
+    }
+    if (file.endsWith('.js')) {
+      const oldPath = path.join(distDir, file)
+      const newPath = path.join(distDir, file.replace('.js', '.mjs'))
+      fs.renameSync(oldPath, newPath)
     }
   })
 
