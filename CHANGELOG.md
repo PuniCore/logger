@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/PuniCore/logger/compare/v1.1.1...v1.1.2) (2025-07-05)
+
+
+### 🐛 错误修复
+
+* 导出路径 ([163de36](https://github.com/PuniCore/logger/commit/163de36589c54477cd4f23698e6e65e82b1ca2da))
+
 ## [1.1.1](https://github.com/PuniCore/logger/compare/v1.1.0...v1.1.1) (2025-07-05)
 
 
