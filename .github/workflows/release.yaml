@@ -138,5 +138,5 @@ jobs:
     steps:
       - name: 同步镜像源
         run: |
-          curl -X PUT "https://registry-direct.npmmirror.com/-/package/@candriajs/puni/syncs"
+          curl -X PUT "https://registry-direct.npmmirror.com/-/package/@punicore/puni/syncs"
 

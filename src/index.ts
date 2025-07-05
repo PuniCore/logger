@@ -2,12 +2,12 @@ import fs from 'node:fs'
 
 import type { Logger, LoggerOptions } from '@puni/logger/types'
 import chalk from 'chalk'
-import log4js, { type Configuration } from 'log4js'
+import log4js, { type Configuration, type Log4js } from 'log4js'
 /**
  * 创建日志记录器
  * @param options - 配置项
  */
-const initLogger = (options: LoggerOptions) => {
+const initLogger = (options: LoggerOptions): Log4js => {
   const config: Configuration = {
     appenders: {
       console: {
@@ -90,7 +90,7 @@ const initLogger = (options: LoggerOptions) => {
  * 为logger添加自定义颜色
  * @param logger - 日志记录器
  */
-const addColor = (Logger: log4js.Logger, color?: string) => {
+const addColor = (Logger: log4js.Logger, color?: string): Logger => {
   const logger = Logger as unknown as Logger
   logger.chalk = chalk
   logger.red = chalk.red
@@ -127,3 +127,5 @@ export const createLogger = (options: LoggerOptions): Logger => {
 
   return logger
 }
+
+export { Logger }
