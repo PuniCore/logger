@@ -1,2 +1,2 @@
-# logger
+# L
 糯芯核心 • Logger实现
