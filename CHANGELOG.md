@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/PuniCore/logger/compare/v1.1.0...v1.1.1) (2025-07-05)
+
+
+### ♻️ 代码重构
+
+* **src:** 重构日志记录器的初始化和颜色添加功能 ([b475f17](https://github.com/PuniCore/logger/commit/b475f17c20586095c85e882fe86ebbe0a57d3e33))
+
 ## [1.1.0](https://github.com/PuniCore/logger/compare/v1.0.0...v1.1.0) (2025-07-05)
 
 
