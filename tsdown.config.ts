@@ -40,6 +40,11 @@ const copyFiles = () => {
     if (file.endsWith('.d.cts')) {
       fs.rmSync(path.join(distDir, file))
     }
+    if(file.endsWith('.d.mts')){
+      const oldPath = path.join(distDir, file)
+      const newPath = path.join(distDir, file.replace('.d.mts', '.d.ts'))
+      fs.renameSync(oldPath, newPath)
+    }
   })
 
   console.log('构建目录成功!')
