@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/PuniCore/logger/compare/v1.1.2...v1.1.3) (2025-07-06)
+
+
+### 📦️ 构建系统
+
+* **tsdown:** 启用 fixedExtension 选项并移除 .js 文件改名逻辑 ([fbf50f0](https://github.com/PuniCore/logger/commit/fbf50f08308ce36592641a8df52150e8fdfefda9))
+
 ## [1.1.2](https://github.com/PuniCore/logger/compare/v1.1.1...v1.1.2) (2025-07-05)
 
 
