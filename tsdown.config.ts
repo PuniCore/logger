@@ -9,7 +9,8 @@ export const options: Options =({
   entry: ['src/index.ts', 'src/root.ts'],      // 入口文件
   format: ['cjs', 'esm'],       // ESM格式
   nodeProtocol: true,             // 使用Node.js协议
-  unbundle: false,                 // 打包依赖
+  unbundle: false,                 // 保持目录结构
+  fixedExtension: true,             // 统一扩展名
   dts: true,                    // 生成类型声明文件
   clean: true,                  // 清理dist目录
   minify: true,                 // 压缩生产环境代码
@@ -38,11 +39,6 @@ const copyFiles = () => {
   fs.readdirSync(distDir).forEach((file) => {
     if (file.endsWith('.d.cts')) {
       fs.rmSync(path.join(distDir, file))
-    }
-    if (file.endsWith('.js')) {
-      const oldPath = path.join(distDir, file)
-      const newPath = path.join(distDir, file.replace('.js', '.mjs'))
-      fs.renameSync(oldPath, newPath)
     }
   })
 
