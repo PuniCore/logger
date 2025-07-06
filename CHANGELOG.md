@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/PuniCore/logger/compare/v1.1.3...v1.1.4) (2025-07-06)
+
+
+### 🐛 错误修复
+
+* build配置 ([93ba910](https://github.com/PuniCore/logger/commit/93ba9106f6355f865586f7d2f85384aeac27f963))
+
 ## [1.1.3](https://github.com/PuniCore/logger/compare/v1.1.2...v1.1.3) (2025-07-06)
 
 
