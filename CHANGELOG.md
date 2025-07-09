@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.6](https://github.com/PuniCore/logger/compare/v1.1.5...v1.1.6) (2025-07-09)
+
+
+### ♻️ 代码重构
+
+* **src:** 重构日志等级处理逻辑 ([1d19686](https://github.com/PuniCore/logger/commit/1d196863da4f00b0045160ad82e83762a422cc12))
+
 ## [1.1.5](https://github.com/PuniCore/logger/compare/v1.1.4...v1.1.5) (2025-07-09)
 
 
