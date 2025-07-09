@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/PuniCore/logger/compare/v1.1.4...v1.1.5) (2025-07-09)
+
+
+### ♻️ 代码重构
+
+* **logger:** 将 LoggerLevel 改为枚举类型并更新相关引用 ([13c83e4](https://github.com/PuniCore/logger/commit/13c83e47045559eb15de5ea1d76685a3b98fa8bc))
+
 ## [1.1.4](https://github.com/PuniCore/logger/compare/v1.1.3...v1.1.4) (2025-07-06)
 
 
