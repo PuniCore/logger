@@ -1,6 +1,6 @@
 {
   "name": "@punicore/logger",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "糯芯核心 • 日志模块",
   "keywords": [
     "node",
