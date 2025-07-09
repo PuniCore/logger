@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 
-import type { Logger, LoggerOptions } from '@puni/logger/types'
+import { type Logger, LoggerLevel, type LoggerOptions } from '@puni/logger/types'
 import chalk from 'chalk'
 import log4js, { type Configuration, type Log4js } from 'log4js'
 /**
@@ -67,7 +67,7 @@ const initLogger = (options: LoggerOptions): Log4js => {
         /** 目标appender */
         appender: 'errorFile',
         /** 只记录错误级别及以上的日志 */
-        level: 'error'
+        level: LoggerLevel.ERROR
       }
     },
     categories: {
@@ -75,7 +75,7 @@ const initLogger = (options: LoggerOptions): Log4js => {
         appenders: options.FileLogging
           ? ['console', 'overall', 'errors']
           : ['console'],
-        level: options.level ?? 'info',
+        level: options.level ?? LoggerLevel.INFO,
         enableCallStack: options.devMode ?? false
       }
     },
@@ -128,4 +128,4 @@ export const createLogger = (options: LoggerOptions): Logger => {
   return logger
 }
 
-export { Logger }
+export * from '@puni/logger/types'

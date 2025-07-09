@@ -16,7 +16,16 @@ export interface LoggerOptions {
 }
 
 /** 日志等级 */
-export type LoggerLevel = 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'fatal' | 'mark' | 'off'
+export enum LoggerLevel {
+  TRACE = 'trace',
+  DEBUG = 'debug',
+  INFO = 'info',
+  WARN = 'warn',
+  ERROR = 'error',
+  FATAL = 'fatal',
+  MARK = 'mark',
+  OFF = 'off'
+}
 
 /**
  * @description 日志接口
