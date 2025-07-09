@@ -53,6 +53,14 @@ export interface Logger extends Log4jsLogger {
    */
   bot: (level: LoggerLevel, id: string, ...args: any[]) => void
 
+  /**
+   * @description 适配器日志
+   * @param level - 日志等级
+   * @param adapterName - 适配器名称
+   * @param args - 日志内容
+   */
+  adapter: (level: LoggerLevel, adapterName: string, ...args: any[]) => void
+
   /** @description 打印追踪日志 */
   trace (...args: any[]): void
 

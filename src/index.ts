@@ -107,6 +107,10 @@ const addColor = (Logger: log4js.Logger, color?: string): Logger => {
     const logMethod = logger[level].bind(logger) ?? logger.info.bind(logger)
     return logMethod(logger.violet(`[Bot:${id}]`), ...args)
   }
+  logger.adapter = (level, adapterName, ...args) => {
+    const logMethod = logger[level].bind(logger) ?? logger.info.bind(logger)
+    return logMethod(logger.chalk.hex('#7AC5CD')(`[Adapter][${adapterName}]`), ...args)
+  }
   return logger
 }
 
