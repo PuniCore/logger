@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/PuniCore/logger/compare/v1.1.6...v1.2.0) (2025-07-09)
+
+
+### ✨ 新功能
+
+* **logger:** 增加适配器日志功能 ([193e6e2](https://github.com/PuniCore/logger/commit/193e6e2748d5fa864be340473095087bec26c33b))
+
 ## [1.1.6](https://github.com/PuniCore/logger/compare/v1.1.5...v1.1.6) (2025-07-09)
 
 
