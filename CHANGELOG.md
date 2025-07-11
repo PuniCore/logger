@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/PuniCore/logger/compare/v1.2.0...v1.2.1) (2025-07-11)
+
+
+### 📦️ 构建系统
+
+* **deps:** 替换 log4js 依赖版本 ([e0a8303](https://github.com/PuniCore/logger/commit/e0a8303955fb83ae9a0eb1c0211be263b2569f78))
+
 ## [1.2.0](https://github.com/PuniCore/logger/compare/v1.1.6...v1.2.0) (2025-07-09)
 
 
