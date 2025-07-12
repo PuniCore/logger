@@ -12,8 +12,8 @@ importers:
         specifier: ^5.4.1
         version: 5.4.1
       log4js:
-        specifier: npm:@candriajs/log4js@^1.1.6
-        version: '@candriajs/log4js@1.1.6'
+        specifier: npm:@candriajs/log4js@^1.1.7
+        version: '@candriajs/log4js@1.1.7'
     devDependencies:
       '@types/node':
         specifier: ^22.16.0
@@ -75,8 +75,8 @@ packages:
     resolution: {integrity: sha512-jYnje+JyZG5YThjHiF28oT4SIZLnYOcSBb6+SDaFIyzDVSkXQmQQYclJ2R+YxcdmK0AX6x1E5OQNtuh3jHDrUg==}
     engines: {node: '>=6.9.0'}
 
-  '@candriajs/log4js@1.1.6':
-    resolution: {integrity: sha512-rHh2WSiP+pk+0nTaYDr2zCRbGuFpIoG2XraifMLZxYePS06WXSP8wEwSaljuCHh79Em45XBdkCuusItu2InKzQ==}
+  '@candriajs/log4js@1.1.7':
+    resolution: {integrity: sha512-2/9H9NWlwIiT2ykexNT5fJ27T2fWRoEQdZv6AfigmzOUpzIGoJkXr3gdDHwhYxxZgOaVoL/x9w/0NhUqR1vCRw==}
     engines: {node: '>=18'}
 
   '@emnapi/core@1.4.3':
@@ -1778,7 +1778,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@candriajs/log4js@1.1.6': {}
+  '@candriajs/log4js@1.1.7': {}
 
   '@emnapi/core@1.4.3':
     dependencies:
