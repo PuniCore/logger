@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.3](https://github.com/PuniCore/logger/compare/v1.2.2...v1.2.3) (2025-07-12)
+
+
+### 📦️ 构建系统
+
+* **deps:** 升级 @candriajs/log4js 至 1.1.7 版本 ([35b61c2](https://github.com/PuniCore/logger/commit/35b61c284a70e74fda83162b64b5c053762ddf9c))
+* **Logger:** 升级 log4js 依赖至 1.1.6 版本 ([de190fb](https://github.com/PuniCore/logger/commit/de190fbf507c05627bbf593308c7fc778f013d58))
+
 ## [1.2.2](https://github.com/PuniCore/logger/compare/v1.2.1...v1.2.2) (2025-07-12)
 
 
