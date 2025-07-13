@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/PuniCore/logger/compare/v1.2.3...v1.2.4) (2025-07-13)
+
+
+### 📦️ 构建系统
+
+* **release:** 更新 release workflow 并配置 pnpm ([f2ff108](https://github.com/PuniCore/logger/commit/f2ff108f4f0d765099c2ca6cfd36c9c5611bceaa))
+
 ## [1.2.3](https://github.com/PuniCore/logger/compare/v1.2.2...v1.2.3) (2025-07-12)
 
 
