@@ -100,9 +100,9 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
 
       - name: 设置 pnpm
-        uses: pnpm/action-setup@v4
+        uses: DerYeger/pnpm-setup-action@master
         with:
-          run_install: true
+          node-version: 20
 
       - name: 构建
         run: |
@@ -133,11 +133,6 @@ jobs:
         run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
-
-      - name: 设置 pnpm
-        uses: pnpm/action-setup@v4
-        with: 
-          version: 10
       
       - name: 导入构建产物
         uses: actions/download-artifact@v4
@@ -145,6 +140,9 @@ jobs:
           name: ${{ needs.beta-version.outputs.package_short_name }}
           path: ./
 
+      - name: 设置 pnpm
+        uses: pnpm/action-setup@v4
+        
       - name: 发布预览版
         run: |
           pnpm dlx pkg-pr-new publish --json output.json --comment=off > pkg-output.txt 2>&1
